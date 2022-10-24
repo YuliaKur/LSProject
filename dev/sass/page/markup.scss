@@ -349,7 +349,6 @@ input:checked+label {
     font-weight: 600;
     text-align: center;
     white-space: nowrap;
-    border: 1px solid $primary-color;
     font-size: 18px;
     line-height: 22px;
     border-radius: 5px;
@@ -359,19 +358,35 @@ input:checked+label {
     &:hover{
         text-decoration: none;
     }
+
+    span{
+        margin-left: 16px;
+    }
+}
+
+input.btn.btn-primary{
+    background: url(../assets/img/icon-big-right.svg) calc(100% - 24px) center no-repeat, 
+    linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+    padding-right: 95px;
+    position: relative;
+}
+
+input.btn.btn-secondary{
+    background: url(../assets/img/icon-video.svg) calc(100% - 34px) center no-repeat  #FF3B3B;
+    padding-right: 95px;
 }
 
 .btn-primary {
     font-size: 16px;
     font-weight: 700;
-    border: 1px solid $primary-color;
-    background-color: $primary-color;
+    border: 1px solid;
+    border-image: $primary-gradient;
     background-image: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
     
     &:hover {
-        background-color: $primary-color;
-        border-color: $primary-color;
+        background-image: $primary-gradient;
+        border-image: $primary-gradient;
         opacity: .9;
     }
 }
@@ -388,14 +403,14 @@ input:checked+label {
 }
 
 .btn-success {
-    color: $primary-color;
-    background-color: transparent;
-    border: 2px solid transparent;
-    border-color: $primary-color;
-
+    background-image: linear-gradient(113.28deg, #1A47EA 3.44%, #82E9FF 96.25%);
+    border: 1px solid;
+    border-image: linear-gradient(#A9EAFF 100%, #6CFFFF 100%);
+     
     &:hover {
-        background-color: #41a6f4;
-        border-color: #41a6f4;
+        background-image: linear-gradient(113.28deg, #1A47EA 3.44%, #82E9FF 96.25%);
+        border-image: linear-gradient(#A9EAFF 100%, #6CFFFF 100%);
+        filter: blur(3.5px);
     }
 }
 
