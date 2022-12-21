@@ -205,32 +205,12 @@ ul {
 } 
 
 /*5-6*/
-.fw-thin{
-    font-weight: 100;
+
+.font-weight-light {
+    font-weight: lighter;
 }
-.fw-extra-light{
-    font-weight: 200;
-}
-.fw-light{
-    font-weight: 300;
-}
-.fw-regular{
-    font-weight: 400;
-}
-.fw-medium{
-    font-weight: 500;
-}
-.fw-semi-bold{
-    font-weight: 600;
-}
-.fw-bold{
-    font-weight: 700;
-}
-.fw-extra-bold{
-    font-weight: 800;
-}
-.fw-black{
-    font-weight: 900;
+.font-weight-bold {
+    font-weight: bold;
 }
 
 /*7-8*/
@@ -345,10 +325,12 @@ input:checked+label {
 
 .btn {
     display: inline-block;
-    padding: 28.4px 34px;
-    font-weight: 600;
+    padding: 12.5px 29px;
+    font-size: 14px;
+    font-weight: 700;
     text-align: center;
     white-space: nowrap;
+<<<<<<< HEAD
     font-size: 18px;
     line-height: 22px;
     border-radius: 5px;
@@ -374,11 +356,21 @@ input.btn.btn-primary{
 input.btn.btn-secondary{
     background: url(../assets/img/icon-video.svg) calc(100% - 34px) center no-repeat  #FF3B3B;
     padding-right: 95px;
+=======
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+>>>>>>> parent of 13902de (Lesson14)
 }
 
 .btn-primary {
+    padding: 11px 29px;
     font-size: 16px;
     font-weight: 700;
+<<<<<<< HEAD
     border: 1px solid;
     border-image: $primary-gradient;
     background-image: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
@@ -388,17 +380,25 @@ input.btn.btn-secondary{
         background-image: $primary-gradient;
         border-image: $primary-gradient;
         opacity: .9;
+=======
+    color: #060606;
+    background-color: #fec22d;
+
+    &:hover {
+        color: #060606;
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+>>>>>>> parent of 13902de (Lesson14)
     }
 }
 
 .btn-secondary {
-    background-color: $secondary-color;
-    border: 1px solid  $secondary-color;
+    color: #fff;
+    background-color: $primary-color;
 
     &:hover {
-        background-color: $secondary-color;
-        border-color: $secondary-color;
-        opacity: .9;
+        background-color: #41a6f4;
+        border-color: #41a6f4;
     }
 }
 
